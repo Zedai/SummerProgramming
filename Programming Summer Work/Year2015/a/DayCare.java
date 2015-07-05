@@ -11,7 +11,12 @@ public class DayCare {
 	
 	public int output(){
 		for(int i = 0; i < num; i++){
+<<<<<<< HEAD
 			if(entries)
+=======
+			//sriram is REALLY stupid
+			
+>>>>>>> branch 'master' of https://github.com/Zedai/SummerProgramming
 		}
 	}
 }
