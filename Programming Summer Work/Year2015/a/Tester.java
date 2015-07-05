@@ -20,7 +20,7 @@ public class Tester {
 		int[] entries = new int[num];
 		for(int i = 0; i < num; i++)
 		{
-			entries[i] = (int)(Math.random() * 10000) + (-10000);
+			entries[i] = (int)(Math.random() * 10000) + 1;
 		}
 		return entries;
 	}
