@@ -19,6 +19,21 @@ public class Encryption {
 		}
 	}
 	
+	public String encrypt(){
+		String msg = "";
+		for(int i = 0; i < numChars; i++){
+			char addchar = unencrypted.charAt(i);
+			addchar += cipher[i];
+			while(addchar > 122){
+				int x = 123 - unencrypted.charAt(i);
+				addchar = (char) (97 + (cipher[i] - x));
+			}	
+			msg += addchar;
+		}
+		
+		return msg;
+	}
+	
 	public int[] getCipher(){
 		return cipher;
 	}

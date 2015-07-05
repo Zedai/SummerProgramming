@@ -1,10 +1,18 @@
 package c;
 
+import java.util.Scanner;
+
 public class Tester {
 	public static void main(String[] args){
-		Encryption test = new Encryption(3, "5 2 46", "bzy");
-		int[] cipher = test.getCipher();
-		for(int x : cipher)
-			System.out.println(x);
+		System.out.println("Start Input");
+		Scanner keyboard = new Scanner(System.in);
+		int numChar = Integer.parseInt(keyboard.nextLine());
+		String cipher = keyboard.nextLine();
+		String msg = keyboard.nextLine();
+		keyboard.nextLine();
+		
+		Encryption test = new Encryption(numChar, cipher, msg);		
+		System.out.println(test.encrypt());
+		keyboard.close();
 	}
 }
